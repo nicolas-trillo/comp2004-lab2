@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+:root {
+  --grey: rgb(99 99 102);
+  --green: rgb(40 205 65);
+  --red: rgb(255 59 48);
+}
+* {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+html {
+  background-color: rgb(242, 242, 247);
+}
+h1 {
+  margin-bottom: 20px;
+}
+.red-text {
+  color: var(--red);
+}
+.green-text {
+  color: var(--green);
+}
+.grey-text {
+  color: var(--grey);
+}
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding-top: 20px;
+  border-top: 4px var(--grey) solid;
+}
+.hotel-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 100px;
+  flex-grow: 2;
+  flex-basis: 100%;
+}
+.hotel-card img {
+  height: auto;
+}
+.hotel-card * {
+  min-width: 100%;
+  max-width: 100%;
+  text-align: left;
+}
